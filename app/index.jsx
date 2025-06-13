@@ -1,6 +1,6 @@
 import { Colors } from '@/constants/Colors';
 import { useRouter } from 'expo-router';
-import { Pressable, StyleSheet, Text, useColorScheme, View } from 'react-native';
+import { Pressable, SafeAreaView, StyleSheet, Text, useColorScheme, View } from 'react-native';
 
 const index = () => {
   const router = useRouter();
@@ -8,7 +8,9 @@ const index = () => {
   const theme= Colors[colorScheme] ?? Colors.light;
   
   return (
-    <View style= {[styles.container]}>
+
+    <SafeAreaView>
+       <View style= {[styles.container]}>
       <Text style= {[styles.logo, {color: theme.text}]}>
         PickPerfect
       </Text>
@@ -17,10 +19,11 @@ const index = () => {
       onPress={()=> router.push('/draft')}>
           <Text style= {styles.btnText}>Start</Text>
       </Pressable>
-    
     </View>
+    </SafeAreaView>
+   
   )
-}//testing this if it works
+}
 
 const styles = StyleSheet.create({
   container:{

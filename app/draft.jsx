@@ -1,11 +1,16 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { SafeAreaView, Text, View } from 'react-native'
 
 const draft = () => {
   return (
-    <View>
-      <Text>draft</Text>
-    </View>
+
+    <SafeAreaView>
+      <View>
+        <Text>draft</Text>
+      </View>
+
+    </SafeAreaView>
+
+    
   )
 }
 
