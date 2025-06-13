@@ -1,8 +1,6 @@
-import React from 'react'
-import { Image } from 'expo-image';
-import { Pressable,Platform, StyleSheet, View,Text, useColorScheme} from 'react-native';
-import {Colors} from '@/constants/Colors'
-import {useRouter} from 'expo-router';
+import { Colors } from '@/constants/Colors';
+import { useRouter } from 'expo-router';
+import { Pressable, StyleSheet, Text, useColorScheme, View } from 'react-native';
 
 const index = () => {
   const router = useRouter();
@@ -22,7 +20,7 @@ const index = () => {
     
     </View>
   )
-}
+}//testing this if it works
 
 const styles = StyleSheet.create({
   container:{
