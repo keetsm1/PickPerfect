@@ -9,14 +9,12 @@ const index = () => {
   
   return (
 
-    <SafeAreaView>
+    <SafeAreaView style= {{flex: 1}}>
        <View style= {[styles.container]}>
-      <Text style= {[styles.logo, {color: theme.text}]}>
-        PickPerfect
-      </Text>
+      <Text style= {[styles.logo, {color: theme.text}]}> PickPerfect </Text>
 
       <Pressable style= {styles.btnStart} 
-      onPress={()=> router.push('/draft')}>
+      onPress={()=> router.push('draft')}>
           <Text style= {styles.btnText}>Start</Text>
       </Pressable>
     </View>

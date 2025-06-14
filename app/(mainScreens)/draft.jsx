@@ -2,10 +2,9 @@ import { SafeAreaView, Text, View } from 'react-native'
 
 const draft = () => {
   return (
-
-    <SafeAreaView>
+    <SafeAreaView style= {{flex: 1}}>
       <View>
-        <Text>draft</Text>
+        <Text>Home</Text>
       </View>
 
     </SafeAreaView>
