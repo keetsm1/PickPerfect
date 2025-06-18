@@ -10,11 +10,11 @@ const index = () => {
   return (
 
     <SafeAreaView style= {{flex: 1}}>
-       <View style= {[styles.container]}>
+       <View style= {[styles.container, {backgroundColor: theme.background}]}>
       <Text style= {[styles.logo, {color: theme.text}]}> PickPerfect </Text>
 
       <Pressable style= {styles.btnStart} 
-      onPress={()=> router.push('draft')}>
+      onPress={()=> router.push('otherTeams')}>
           <Text style= {styles.btnText}>Start</Text>
       </Pressable>
     </View>
